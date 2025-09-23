@@ -1,72 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zihao Wang | Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zihao Wang (Joshua) — Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
-  <div class="max-w-4xl mx-auto p-6">
-    <header class="text-center mb-8">
-      <h1 class="text-4xl font-bold">Zihao Wang (Joshua)</h1>
-      <p class="mt-2">Master of IT | Backend Developer | Full Stack Engineer</p>
-      <div class="mt-2 space-x-4">
-        <a href="mailto:joshding41@gmail.com" class="text-blue-600">Email</a>
-        <a href="https://www.linkedin.com/in/joshwong7777/" class="text-blue-600">LinkedIn</a>
-        <a href="https://github.com/JoJohowl" class="text-blue-600">GitHub</a>
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <div class="max-w-5xl mx-auto p-6">
+    <!-- Header -->
+    <header class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-8">
+      <div>
+        <h1 class="text-4xl font-extrabold">Zihao Wang <span class="text-lg font-medium text-gray-600">（Joshua）</span></h1>
+        <p class="mt-1 text-gray-600">Master of IT — Backend / Full-stack Developer</p>
+        <div class="mt-3 space-x-3 text-sm">
+          <a href="mailto:joshding41@gmail.com" class="underline">joshding41@gmail.com</a>
+          <span>·</span>
+          <a href="tel:0481816797" class="underline">0481 816 797</a>
+          <span>·</span>
+          <a href="https://www.linkedin.com/in/joshwong7777/" target="_blank" rel="noopener" class="underline">LinkedIn</a>
+          <span>·</span>
+          <a href="https://github.com/JoJohowl" target="_blank" rel="noopener" class="underline">GitHub</a>
+        </div>
+      </div>
+
+      <div class="text-sm text-right">
+        <a href="/resume.docx" class="inline-block px-4 py-2 bg-blue-600 text-white rounded shadow-sm hover:bg-blue-700" download>下载简历（.docx）</a>
+        <p class="mt-2 text-gray-500">把你的 Word 文件命名为 <code>resume.docx</code> 并放到仓库根目录，下载链接即可生效。</p>
       </div>
     </header>
 
-    <section class="mb-6">
-      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Profile</h2>
-      <p>Technically driven and proactive Master of IT student with 3+ years of software engineering experience. Skilled in Java, Python (Flask/Django), React, and passionate about backend development and building scalable systems.</p>
+    <!-- About / Profile -->
+    <section id="profile" class="mb-8 bg-white p-6 rounded-lg shadow-sm">
+      <h2 class="text-2xl font-bold mb-3">Profile</h2>
+      <p>Technically driven and proactive Master of IT student with 3+ years of full-time software engineering experience and skills in Java, Python (Flask/Django), and React. Passionate about backend development and building clean, scalable systems. Strong team player with a product mindset and problem-solving ability.</p>
     </section>
 
-    <section class="mb-6">
-      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Skills</h2>
-      <ul class="grid grid-cols-2 gap-2 list-disc list-inside">
-        <li>Java, Python, JavaScript/TypeScript, SQL</li>
-        <li>Django, Flask, React, TailwindCSS</li>
-        <li>Git, REST API, Flask-Login, Power Automate, Axure</li>
-        <li>Agile, Project Management, Collaboration</li>
-      </ul>
-    </section>
+    <div class="md:flex md:gap-6">
+      <!-- Left column -->
+      <main class="md:flex-1">
+        <!-- Experience -->
+        <section id="experience" class="mb-6 bg-white p-6 rounded-lg shadow-sm">
+          <h2 class="text-2xl font-bold mb-4">Relevant Experience</h2>
 
-    <section class="mb-6">
-      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Experience</h2>
-      <div>
-        <h3 class="font-bold">Software Engineer & Product Manager</h3>
-        <p class="text-sm text-gray-600">Shanghai Joying InfoTech | Jan 2022 – Feb 2024</p>
-        <p>Led backend development in a Java-based e-commerce system, improving performance by 45%. Collaborated cross-functionally to ensure scalability.</p>
-      </div>
-      <div class="mt-4">
-        <h3 class="font-bold">Full Stack Engineer & ERP Product Manager</h3>
-        <p class="text-sm text-gray-600">Shanghai Zhuizhi Network Technology | Jun 2021 – Jan 2022</p>
-        <p>Built backend (Java) and frontend (JavaScript) features for e-commerce tools. Conducted unit testing and performance optimisation.</p>
-      </div>
-      <div class="mt-4">
-        <h3 class="font-bold">Front-end Engineer</h3>
-        <p class="text-sm text-gray-600">iSoftStone | Oct 2016 – May 2017</p>
-        <p>Developed telecom project solutions with AngularJS. Handled version control, scalability, and code quality.</p>
-      </div>
-    </section>
+          <article class="mb-4">
+            <h3 class="font-semibold">Software Engineer & Product Manager</h3>
+            <p class="text-sm text-gray-600">Shanghai Joying InfoTech — Jan 2022 – Feb 2024</p>
+            <ul class="list-disc list-inside mt-2 text-gray-700">
+              <li>Led backend development in a Java-based e-commerce system, improving performance by 45%.</li>
+              <li>Collaborated cross-functionally to optimise workflows and ensure system scalability.</li>
+            </ul>
+          </article>
 
-    <section class="mb-6">
-      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Projects</h2>
-      <ul class="list-disc list-inside">
-        <li>
-          <a href="https://github.com/JoJohowl/solarscope-insights" class="text-blue-600">Solar Scope Insights</a> – Flask-based solar data platform with Tailwind UI and dashboard.
-        </li>
-        <li>
-          <a href="https://github.com/codersforcauses/robodrone" class="text-blue-600">Robodrone</a> – Full-stack Sponsors page using React + Django REST.
-        </li>
-      </ul>
-    </section>
+          <article class="mb-4">
+            <h3 class="font-semibold">Full Stack Engineer & ERP Product Manager</h3>
+            <p class="text-sm text-gray-600">Shanghai Zhuizhi Network Technology — Jun 2021 – Jan 2022</p>
+            <ul class="list-disc list-inside mt-2 text-gray-700">
+              <li>Built backend (Java) and frontend (JavaScript) features for e-commerce tools.</li>
+              <li>Conducted unit testing and performance optimisation to ensure smooth deployments.</li>
+            </ul>
+          </article>
 
-    <footer class="text-center mt-8 text-sm text-gray-600">
-      © 2025 Zihao Wang
-    </footer>
-  </div>
-</body>
-</html>
+          <article>
+            <h3 class="font-semibold">Front-end Engineer</h3>
+            <p class="text-sm text-gray-600">iSoftStone Information Technology — Oct 2016 – May 2017</p>
+            <ul class="list-disc list-inside mt-2 text-gray-700">
+              <li>Developed solutions for international telecom projects using AngularJS; managed version control and code quality.</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Internship -->
+        <section id="internship" class="mb-6 bg-white p-6 rounded-lg shadow-sm">
+          <h2 class="text-2xl font-bold mb-3">Internship</h2>
+          <h3 class="font-semibold">Systems Automation & AI Intern</h3>
+          <p class="text-sm text-gray-600">Earbus Foundation of WA, Perth — Jun–Jul 2025</p>
+          <ul class="list-disc list-inside mt-2 text-gray-700">
+            <li>Developed data cleaning and transformation scripts using Python to process raw datasets.</li>
+            <li>Utilised Power Automate to create automated workflows, streamlining repetitive tasks and improving operational efficiency.</li>
+          </ul>
+        </section>
+
+        <!-- Awards -->
+        <section id="awards" class="mb-6 bg-white p-6 rounded-lg shadow-sm">
+          <h2 class="text-2xl font-bold mb-3">Awards & Achievements</h2>
+          <div>
+            <h3 class="font-semibold">3rd Place — Hack for Impact 2025 (Venture UWA & Genvis Innovation Challenge)</h3>
+            <ul class="list-disc list-inside mt-2 text-gray-700">
+              <li>Designed “Milli Guardian”, a digital safety tool to detect and flag tech-facilitated abuse risks in mobile apps.</li>
+              <li>Collaborated with a cross-functional team to deliver a working prototype within one week.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="mb-6 bg-white p-6 rounded-lg shadow-sm">
+          <h2 class="text-2xl font-bold mb-3">Projects</h2>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>
+              <a href="https://github.com/JoJohowl/solarscope-insights" target="_blank" rel="noopener" class="underline">Solar Scope Insights</a> — Flask-based solar data platform with Tailwind-styled pages. Built login/auth and interactive dashboard.
+            </li>
+            <li>
+              <a href="https://github.com/codersforcauses/robodrone" target="_blank" rel="noopener" class="underline">Robodrone (with CFC)</a> — Built a Sponsors page using React + Django REST; wrote reusable components and TypeScript types.
+            <
